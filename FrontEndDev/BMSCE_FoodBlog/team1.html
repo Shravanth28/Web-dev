@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #AC7D88;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #4B7BE5;
+        }
+
+        .j {
+            background-color: white;
+        }
+
+        .card {
+            background-color: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="j">
+
+    <h2>"Meet The Team"</h2>
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="C:\Users\shrav\OneDrive\Documents\GitHub\FrontEndDev\BMSCE_FoodBlog\image\billy.jpg"
+                    alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Skanda</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Some that is worth a penny</p>
+                    <p>billy@yahoo.com</p>
+                    <p><button class="button"><a href="contact.html">Contact</a></button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="C:\Users\shrav\Dropbox\My PC (DESKTOP-689769P)\Downloads\jeffy.jpg" alt="Mike"
+                    style="width:100%">
+                <div class="container">
+                    <h2>Shravanth</h2>
+                    <p class="title">Software Engineer</p>
+                    <p>Has a lot of potential</p>
+                    <p>jeffy@gmail.com</p>
+                    <p><button class="button"><a href="contact.html">Contact</a></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="C:\Users\shrav\Dropbox\My PC (DESKTOP-689769P)\Downloads\delivery.jpg" alt="John"
+                    style="width:100%">
+                <div class="container">
+                    <h2>Shahsank</h2>
+                    <p class="title">Design Engineer</p>
+                    <p>He is quite honest in his job</p>
+                    <p>elon@facebook.com</p>
+                    <p><button class="button"><a href="contact.html">Contact</a></button></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
